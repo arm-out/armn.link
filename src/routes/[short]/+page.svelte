@@ -1,3 +1,23 @@
+<script lang="ts">
+	import { goto } from '$app/navigation';
+	import { onMount } from 'svelte';
+
+	export let data;
+
+	onMount(async () => {
+		try {
+			let redirect = await data.streamed.redirect;
+
+			if (redirect) {
+				window.location.replace('https://' + String(redirect));
+			}
+		} catch (error) {
+			console.error('Error fetching redirect:', error);
+			goto('/404');
+		}
+	});
+</script>
+
 <div class="flex h-screen w-full flex-col items-center justify-center gap-4">
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145 129" fill="none" class="h-16 opacity-15">
 		<path
@@ -9,5 +29,5 @@
 			fill="white"
 		/>
 	</svg>
-	<h1>Redirecting...</h1>
+	<h1 class="text-xl font-light text-[#333]">Redirecting...</h1>
 </div>
