@@ -7,7 +7,7 @@ export const load: PageServerLoad = async ({ params }) => {
 	return {
 		streamed: {
 			redirect: turso
-				.execute(`SELECT redirect FROM links WHERE link = '${params.short}'`)
+				.execute({ sql: `SELECT redirect FROM links WHERE link = ?`, args: [params.short] })
 				.then((result) => result.rows[0].redirect || null)
 		}
 	};
