@@ -11,7 +11,7 @@
 	</svg>
 	<h1 class="text-3xl font-light text-[#333]">Armin Suraj</h1>
 	<div class="flex flex-row items-center justify-center gap-4">
-		<a href="https://arminsuraj.com"
+		<a aria-label="Armin Suraj's website" href="https://arminsuraj.com"
 			><svg
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 145 129"
@@ -28,7 +28,7 @@
 				/>
 			</svg></a
 		>
-		<a href="https://www.linkedin.com/in/arminsuraj/"
+		<a aria-label="Armin Suraj's Linkedin" href="https://www.linkedin.com/in/arminsuraj/"
 			><svg
 				class="h-8 w-8 text-white opacity-15 hover:opacity-35"
 				aria-hidden="true"
@@ -46,7 +46,7 @@
 				<path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
 			</svg>
 		</a>
-		<a href="https://github.com/arm-out"
+		<a aria-label="Armin Suraj's Github" href="https://github.com/arm-out"
 			><svg
 				class="h-6 w-6 text-white opacity-15 hover:opacity-35"
 				aria-hidden="true"
@@ -63,7 +63,7 @@
 				/>
 			</svg>
 		</a>
-		<a href="https://x.com/armzout"
+		<a aria-label="Armin Suraj's X/Twitter" href="https://x.com/armzout"
 			><svg
 				class="h-6 w-6 text-white opacity-15 hover:opacity-35"
 				aria-hidden="true"
