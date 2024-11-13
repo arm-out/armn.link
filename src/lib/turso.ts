@@ -26,3 +26,10 @@ export const deleteLink = async (link: string, redirect: string) => {
 		args: [link, redirect]
 	});
 };
+
+export const createLink = async (link: string, redirect: string) => {
+	return turso.execute({
+		sql: 'INSERT INTO links (link, redirect) VALUES (?, ?)',
+		args: [link, redirect]
+	});
+};
