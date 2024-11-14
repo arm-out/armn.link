@@ -1,1 +1,1 @@
-A simple personal URL shortner
+A simple personal URL shortener
